@@ -1,0 +1,42 @@
+package Dinesh;
+//Using Polymorphism
+public class Account {
+
+public void Payroll (String EmployeeName,String  EmployeeID) {
+
+System.out.println("Employee Details :" + (EmployeeName + EmployeeID ));	
+	
+}
+public void Payroll (Integer Attendance,Integer ExtradayPay ) {
+	
+System.out.println("Days:"+ (30 + 12));	
+}
+
+public void Payroll (int BasicSalary, int DaAllowance ) {
+	
+System.out.println("Amount:" + (75000 + 25000));
+
+}
+public void Payroll (double Medical, double Allowance) {
+
+System.out.println("Band Wise:"+ (12500 + 2500));
+}
+
+public static void main(String[] args) {
+	
+Account salaryslip = new Account();
+
+salaryslip.Payroll("Dinesh:", "1287");
+salaryslip.Payroll(30 , 12);
+salaryslip.Payroll(75000 , 25000);
+salaryslip.Payroll(12500 , 2500);
+}
+
+
+}
+
+Output :
+Employee Details :Dinesh:1287
+Amount:100000
+Amount:100000
+Amount:100000
